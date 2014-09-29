@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malermesterne Jenssen & Bjørgen AS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="/assets/fonts/helveticaneueltstd-mdcn.css" rel="stylesheet">
+    <link href="/assets/fonts/myriadpro-regular.css" rel="stylesheet">
+    <link href="/assets/fonts/myriadpro-bold.css" rel="stylesheet">
+    <body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="row-fluid">
+
+            <div class="span2 sidebar-container">
+                <div class="hidden-phone hidden-tablet">{% include sidebar.html %}</div>
+            </div>
+
+            <div class="span10 content">
+                <hr>
+                {% include header.html %}
+                <hr>
+                <div class="visible-phone visible-tablet">
+                    <select style="width: 100%; margin-bottom: 0px;" id="menu-select">
+                        <option value="/">Hjem</option>
+                        <option value="/om.html">Om Jenssen & Bjørgen</option>
+                        <option value="/referanser/">Referanser</option>
+                        <option value="/medieomtale/">Medieomtale</option>
+                        <option value="/malingermaling.html">Maling er maling?</option>
+                        <option value="/kontaktoss.html">Kontakt oss</option>
+                    </select>
+                    <hr>
+                </div>
+                {{ content }}
+                <hr></div>
+        </div>
+    </div>
+
+    <!-- Scripts, place last! -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

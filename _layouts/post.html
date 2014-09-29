@@ -1,0 +1,37 @@
+---
+layout: master
+---
+  {% include carousel.html photos=page.photos %}
+
+  {% capture page_category %}{{ page.categories | first }}{% endcapture %}
+
+  <hr>
+
+  <div class="row-fluid">
+    <div class="span6">
+      <h3>{{ page.title }}</h3>
+      {{ page.desc }}
+    </div>
+    <div class="span6">
+      <h3 style="color: #666; font-size: 16pt">Se flere prosjekter her</h3>
+      <p>
+        <ul>
+			{% for post in site.categories.[page_category] %}
+			    {% unless post.url == page.url %}
+			    <li>
+			    	<a href="{{ post.url }}">{{ post.title }}</a>
+			    </li>
+			    {% endunless %}
+			  {% endfor %}
+        </ul>
+      </p>
+      {% if page_category == "referanser" %}
+      <p>
+        Vi har gjennom årenes løp hatt mange prosjekter. Ønskes det personlige referanser eller mer informasjon, ta gjerne kontakt! Se også flere av våre arbeider under <a href="/medieomtale/">medieomtale</a>.
+      </p>
+      {% endif %}
+
+      {{ content }}
+
+    </div>
+  </div>
