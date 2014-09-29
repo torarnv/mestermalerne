@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'MyriadProMine';
+    src: url('myriadpro-bold.eot');
+    src: url('myriadpro-bold.eot') format('embedded-opentype'),
+         url('myriadpro-bold.woff') format('woff'),
+         url('myriadpro-bold.ttf') format('truetype'),
+         url('myriadpro-bold.svg#MyriadProBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

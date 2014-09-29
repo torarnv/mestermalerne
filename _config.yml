@@ -1,0 +1,28 @@
+name: Mestermalerne
+
+markdown: redcarpet
+highlighter: pygments
+baseurl: /
+
+# GitHub harc-coded defaults
+
+lsi: false
+source: .
+
+permalink: none
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "master"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+
+gems:
+  - jekyll-redirect-from
+
