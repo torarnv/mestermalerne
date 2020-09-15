@@ -1,6 +1,5 @@
 name: Mestermalerne
 
-markdown: redcarpet
 highlighter: rouge
 baseurl: /
 
